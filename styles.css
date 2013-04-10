@@ -1,0 +1,98 @@
+body {
+  padding: 0px;
+  margin: 12px 10%;
+  font-family: Arial Narrow, arial, san-serif;
+  font-size: 13px;
+  background: rgb(246, 246, 239);
+  color: #888;
+}
+
+header {
+  background: #ff6600;
+  float: left;
+  width: 100%;
+  color: white;
+}
+header #logo {
+  display: block;
+  margin: 12px;
+  float: left;
+  font-size: 13px;
+  cursor: default;
+}
+header #logo img {
+  display: block;
+  border: 1px solid white;
+  float: left;
+  margin-right: 3px
+}
+header nav a {
+  display: block;
+  float: left;
+  color: white;
+  padding: 0px 12px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 17px;
+}
+header nav a:hover {
+  color: white;
+  background: rgba(255,255,255,.2);
+}
+header nav.secondary {
+  float: right;
+}
+
+#content {
+  font-family: arial;
+  background: #fafafa;
+  clear: both;
+}
+#content .list {
+  padding: 0px;
+  margin: 0px;
+}
+#content .list li {
+  display: block;
+  border-bottom: 1px solid #eee;
+  padding: 12px;
+}
+#content .list li:hover {
+  background: white;
+}
+#content .list li:last-child {
+  border: 0;
+}
+#content .list li .front {
+  float: left;
+  padding: 6px;
+}
+#content .list li .vote {
+  text-indent: -999px;
+  overflow: hidden;
+  display: inline-block;
+  border: 5px solid transparent;
+  border-top: 0px;
+  border-bottom: 10px solid #aaa;
+  width: 0;
+  height: 0;
+}
+
+footer {
+  background: white;
+  border-top: 2px solid #ff6600;
+  padding: 12px;
+  text-align: center;
+}
+footer .yclinks {
+  margin-bottom: 12px;
+}
+
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: #ff6600;
+}
