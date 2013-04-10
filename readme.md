@@ -1,5 +1,5 @@
 # NHN
-## New Hacker News
+_– The New Hacker News_
 
 The goal of this project is to design a new GUI for y-combinator's hacker news website.
 The design is focused on keeping things close to the original hacker news, while improving on 
