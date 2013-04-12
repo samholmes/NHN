@@ -1,0 +1,195 @@
+@import url('icomoon.css');
+
+body {
+	padding: 0px;
+	margin: 12px 10%;
+	font-family: Arial Narrow, arial, san-serif;
+	font-size: 13px;
+	background: #ebebe5;
+	color: #888;
+}
+
+header {
+	background: #ff6600;
+	float: left;
+	width: 100%;
+	color: white;
+}
+header #logo {
+	display: block;
+	margin: 12px;
+	float: left;
+	font-size: 13px;
+	cursor: default;
+}
+header #logo img {
+	display: block;
+	border: 1px solid white;
+	float: left;
+	margin-right: 3px
+}
+header nav a {
+	display: block;
+	float: left;
+	color: white;
+	padding: 0px 12px;
+	height: 45px;
+	line-height: 45px;
+	font-size: 17px;
+}
+header nav a:hover {
+	color: white;
+	background: rgba(255,255,255,.2);
+}
+header nav.secondary {
+	float: right;
+}
+
+#content {
+	font-family: arial;
+	background: white;
+	clear: both;
+	float: left;
+	width: 100%;
+}
+
+footer {
+	background: white;
+	border-top: 2px solid #ff6600;
+	padding: 12px;
+	text-align: center;
+	clear: both;
+}
+footer .yclinks {
+	margin-bottom: 12px;
+}
+
+
+a {
+	text-decoration: none;
+	color: black;
+}
+a:hover {
+	color: #ff6600;
+}
+
+
+/* The List */
+
+.list {
+	padding: 0px;
+	margin: 0px;
+}
+.list .post {
+	position: relative;
+	display: block;
+	float: left;
+	width: 100%;
+	height: 48px;
+	line-height: 48px;
+}
+.list .post:hover {
+	background: #F6F6EF;
+	box-shadow: 0px 1px 1px rgba(0,0,0,.1);
+	z-index: 1;
+}
+
+.list .post > * {
+	height: 48px;
+	line-height: 48px;
+}
+.list .post .link,
+.list .post .index,
+.list .post .vote,
+.list .post .comments {	
+	padding: 0px 12px;
+}
+.list .post .points,
+.list .post .poster,
+.list .post .time {	
+	padding: 0px 6px;
+}
+
+/* Index */
+
+.list .post .index {
+	float: left;
+	min-width: 24px;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	padding-right: 0;
+}
+
+/* Vote */
+
+.list .post .vote {
+	display: block;
+	float: left;
+	color: #ff6600;
+	height: 48px;
+	text-align: center;
+	/* line-height: 24px; */
+}
+.list .post .vote:hover {
+	color: white;
+	background: #ff6600;
+}
+.list .post .vote .icon {
+	padding 0px;
+	font-family: icomoon;
+	font-style: normal;
+}
+.list .post .vote .icon:before {
+	content: "\e004";
+}
+.list .post .vote {
+	
+}
+
+/* Link */
+
+.list .post .link:hover {
+}
+.list .post .link {
+	float: left;
+	font-size: 15px;
+}
+.list .post .link .domain {
+	color: #ccc;
+}
+
+/* Time */
+.list .post .time {
+	float: right;
+}
+
+/* Poster */
+
+.list .post .poster {
+	float: right;
+}
+.list .post .poster a {
+	color: #666;
+}
+.list .post .poster a:hover {
+	color: #000;
+}
+
+/* Comments */
+
+.list .post .comments {
+	float: left;
+	color: #999;
+}
+.list .post .comments:hover {
+	color: #ff6600;
+}
+.list .post .comments .icon {
+	padding 0px;
+	font-family: icomoon;
+	font-style: normal;
+}
+.list .post .comments .icon:before {
+	content: "\e00b";
+}

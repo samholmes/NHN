@@ -24,23 +24,25 @@ $(function(){
 function createListItem(post){
 	var template = "<div class='post'> \
 				<div class='index'></div> \
-				<a href='#' class='vote' title='vote up'> \
-					<i class='icon'></i> \
-					<span>Vote Up</span> \
-				</a> \
 				<a class='link'> \
 					<span class='title'></span> \
 					<span class='domain'></span> \
 				</a> \
-				<span class='points'> \
-					<span class='count'></span> &#8226; \
-				</span> \
+				<a href='#' class='vote' title='vote up'> \
+					<i class='icon'></i> \
+					<span class='points'> \
+						<span class='count'></span> \
+					</span> \
+				</a> \
+				<a class='comments'> \
+					<span class='count'></span> \
+					<i class='icon'></i> \
+				</a> \
 				<span class='poster'> \
 					by  \
 					<a>fabpot</a>  \
 				</span> \
 				<span class='time'></span> \
-				<a class='comments'></a> \
 			</div>";
 	var $item = $(template);
 	
@@ -55,8 +57,9 @@ function createListItem(post){
 	$item.find('.time').text(post.postedAgo);
 	
 	$item.find('.comments')
-		.text(post.commentCount+' comments')
-		.attr('href', 'item?id='+post.id);
+		.attr('href', 'item?id='+post.id)
+		.find('.count')
+		.text(post.commentCount);
 	
 	return $item;
 }
