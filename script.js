@@ -7,7 +7,7 @@ $(function(){
 			$.each(data.items, function(index, item){
 				var $item = createListItem(item);
 				
-				$item.find('.index').text(index);
+				$item.find('.index').text(index+1);
 				
 				$list.append($item);
 			})
