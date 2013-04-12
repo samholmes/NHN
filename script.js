@@ -15,9 +15,11 @@ $(function(){
 		'jsonp');
 	
 	
-	$('.index').each(function(index){
-		$(this).text(index+1);
-	});
+	$('body')
+		.on('click', '.list .post .link', function(){
+			window.open(this.href);
+			return false;
+		})
 });
 
 
