@@ -110,6 +110,13 @@ a:hover {
 	padding: 0px 6px;
 }
 
+.list .post .link:hover,
+.list .post .vote:hover,
+.list .post .comments:hover {
+	background: #ff6600;
+	color: white;
+}
+
 /* Index */
 
 .list .post .index {
@@ -118,7 +125,18 @@ a:hover {
 	height: 48px;
 	line-height: 48px;
 	text-align: center;
-	padding-right: 0;
+}
+
+/* Link */
+
+.list .post .link:hover {
+}
+.list .post .link {
+	float: left;
+	font-size: 15px;
+}
+.list .post .link .domain {
+	color: #ccc;
 }
 
 /* Vote */
@@ -133,7 +151,6 @@ a:hover {
 }
 .list .post .vote:hover {
 	color: white;
-	background: #ff6600;
 }
 .list .post .vote .icon {
 	padding 0px;
@@ -147,16 +164,22 @@ a:hover {
 	
 }
 
-/* Link */
+/* Comments */
 
-.list .post .link:hover {
-}
-.list .post .link {
+.list .post .comments {
 	float: left;
-	font-size: 15px;
+	color: #999;
 }
-.list .post .link .domain {
-	color: #ccc;
+.list .post .comments:hover {
+	
+}
+.list .post .comments .icon {
+	padding 0px;
+	font-family: icomoon;
+	font-style: normal;
+}
+.list .post .comments .icon:before {
+	content: "\e00b";
 }
 
 /* Time */
@@ -174,22 +197,4 @@ a:hover {
 }
 .list .post .poster a:hover {
 	color: #000;
-}
-
-/* Comments */
-
-.list .post .comments {
-	float: left;
-	color: #999;
-}
-.list .post .comments:hover {
-	color: #ff6600;
-}
-.list .post .comments .icon {
-	padding 0px;
-	font-family: icomoon;
-	font-style: normal;
-}
-.list .post .comments .icon:before {
-	content: "\e00b";
 }

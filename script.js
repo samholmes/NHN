@@ -36,7 +36,7 @@ function createListItem(post){
 						<span class='count'></span> \
 					</span> \
 				</a> \
-				<a class='comments'> \
+				<a class='comments' title='comments'> \
 					<span class='count'></span> \
 					<i class='icon'></i> \
 				</a> \
