@@ -24,6 +24,8 @@ $(function(){
 		})
 	}
 	
+	renderList();
+	
 	$('body')
 		.on('click', '.list .post .link', function(){
 			window.open(this.href);
