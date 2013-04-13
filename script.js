@@ -4,16 +4,25 @@ $(function(){
 	$.get('http://api.ihackernews.com/page', 
 		{format:'jsonp'}, 
 		function(data){ 
-			$.each(data.items, function(index, item){
-				var $item = createListItem(item);
-				
-				$item.find('.index').text(index+1);
-				
-				$list.append($item);
-			})
+			localStorage.data = JSON.stringify(data);
+			renderList();
 		}, 
 		'jsonp');
 	
+	function renderList(){
+		if (!localStorage.data)
+			return;
+		
+		var data = JSON.parse(localStorage.data);
+		
+		$.each(data.items, function(index, item){
+			var $item = createListItem(item);
+			
+			$item.find('.index').text(index+1);
+			
+			$list.append($item);
+		})
+	}
 	
 	$('body')
 		.on('click', '.list .post .link', function(){
