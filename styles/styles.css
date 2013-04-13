@@ -108,7 +108,9 @@ a:hover {
 	padding: 0px 6px;
 }
 
-.list .post .link:hover,
+.list .post .link:hover {
+	color: #ff6600;
+}
 .list .post .vote:hover,
 .list .post .comments:hover {
 	background: #ff6600;
@@ -121,7 +123,6 @@ a:hover {
 	float: left;
 	min-width: 24px;
 	text-align: center;
-	padding-right: 0;
 }
 
 /* Link */
